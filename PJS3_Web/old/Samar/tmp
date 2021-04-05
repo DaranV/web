@@ -1,0 +1,50 @@
+<section class="carousel" id="exemple-carrousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators"> 
+        <li data-target="#exemple-carrousel" data-slide-to="0" 
+    class="active"></li> 
+        <li data-target="#exemple-carrousel" data-slide-to="1"></li> 
+        <li data-target="#exemple-carrousel" data-slide-to="2"></li>
+        <li data-target="#exemple-carrousel" data-slide-to="2"></li> 
+      </ol> 
+     
+      <div class="carousel-inner"> 
+        <div class="item active"> 
+			<img src="https://www.bayeux-intercom.fr/fileadmin/templates/images/slider/declic-numerique.jpg" alt="Déclic Numérique / Tous à l'aise avec le numérique"> 
+			<div class="carousel-caption"> 
+				<h3>Déclic Numérique</h3> 
+                <p><strong>Tous à l'aise avec le numérique</strong></p> 
+			</div> 
+        </div> 
+        <div class="item"> 
+			<img src="https://www.bayeux-intercom.fr/fileadmin/templates/images/slider/eco03.jpg" alt="Economie"> 
+			<div class="carousel-caption"> 
+				<h3>Économie</h3> 
+				<p><strong>Un environnement privilégié pour les entreprises</strong></p>
+			</div> 
+        </div> 
+		<div class="item"> 
+			<img src="https://www.bayeux-intercom.fr/fileadmin/templates/images/slider/med03.jpg" alt="Aménagement des équipements de qualité" > 
+			<div class="carousel-caption"> 
+				<h3>Aménagements</h3> 
+                <p><strong>Des équipements de qualité</strong></p>
+			</div> 
+        </div> 
+		<div class="item"> 
+			<img src="https://www.bayeux-intercom.fr/fileadmin/templates/images/slider/Tour01.jpg" alt="Tourisme"> 
+			<div class="carousel-caption"> 
+				<h3>Tourisme</h3> 
+                 <p><strong>Des paysages et des patrimoines remarquables</strong></p>
+			</div> 
+        </div> 
+      </div> 
+     
+     
+      <a class="left carousel-control" href="#exemple-carrousel" 
+    data-slide="prev"> 
+        <span class="glyphicon glyphicon-chevron-left"></span> 
+      </a> 
+      <a class="right carousel-control" href="#exemple-carrousel" 
+    data-slide="next"> 
+        <span class="glyphicon glyphicon-chevron-right"></span> 
+      </a> 
+  </section>

@@ -1,0 +1,16 @@
+{
+	"flash": {
+		"class": {
+			"error": "danger",
+			"success": "success",
+			"info": "info",
+			"warning": "warning"
+		},
+		"dismissable": {
+			"template": "<div class=\"alert alert-%s alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button> %s</div>"
+		},
+		"nodismissable": {
+			"template": "<div class=\"alert alert-%s\"> %s</div>"
+		}
+	}
+}

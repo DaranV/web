@@ -1,0 +1,312 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.dark-theme .navbar-desktop li {
+  color: white;
+}
+
+.dark-theme .navbar-desktop li a {
+  color: white;
+}
+
+.dark-theme .navbar-desktop li {
+  --color: white;
+  --hover: white;
+}
+
+.dark-theme .navbar-desktop li:hover,
+.dark-theme .navbar-desktop li:focus {
+  box-shadow: inset 14.5em 0 0 0 var(--hover);
+}
+
+.dark-theme .navbar-desktop li:hover a, 
+.dark-theme .navbar-desktop li:focus a {
+  color: black;
+}
+
+.dark-theme .navbar-desktop li {
+  color: var(--color);
+}
+
+.dark-theme .navbar-desktop li:hover, 
+.dark-theme .navbar-desktop li:focus {
+  border-color: var(--hover);
+  color: black;
+}
+
+.dark-theme .navbar-desktop .nav li a:hover{
+  background: none;
+}
+
+.dark-theme .navbar-inverse {
+  background-color: black;
+  border-color: black;
+}
+
+.dark-theme .navbar-inverse .navbar-toggle {
+  border-color: black;
+}
+
+.dark-theme .navbar-inverse .navbar-toggle:focus,
+.dark-theme .navbar-inverse .navbar-toggle:hover {
+  background-color: black;
+}
+
+.dark-theme .navbar-inverse .navbar-collapse, 
+.dark-theme .navbar-inverse .navbar-form {
+  border-color: black;
+}
+
+.dark-theme .navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.dark-theme .carousel {
+  background-color: black;
+}
+
+.dark-theme  .content .chemin {
+	color: #a6a6a6;
+}
+
+.dark-theme .content h1 {
+	color: black;
+}
+
+.dark-theme .card {
+  background-color: black;
+  color: white;
+}
+
+.dark-theme .card .heading {
+  color: white;
+}
+
+.dark-theme .card p {
+  color: white;
+  font-size: 1.3em;
+}
+
+.dark-theme p {
+  font-size: 1.3em;
+}
+
+.dark-theme .card-default > .card-header, 
+.dark-theme .card-default > .card-footer {
+  color: #333;
+  background-color: black
+}
+
+.dark-theme .card-default > .card-footer {
+  border-top: black
+}
+
+.dark-theme .sidebar .panel-heading .accordion-toggle:after {       
+  color: red;       
+}
+
+.dark-theme .sidebar .panel-heading {
+  background-color:black;
+  color: white;
+}
+
+.dark-theme .road-work .slick-carousel .slick-item {
+  color: white;
+  background-color: black;
+}
+
+.dark-theme .road-work .slick-prev:before,
+.dark-theme .road-work .slick-next:before {
+  color: black;
+  content: '';
+}
+
+.dark-theme .road-work .slick-arrow {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.dark-theme .map-overlay{
+  background-color: black;
+  color: white;
+}
+
+.dark-theme .dropdown-content {
+	background-color: #f1f1f1 !important;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dark-theme .dropdown-content a {
+	color: black;
+}
+
+.dark-theme .dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dark-theme .navbar-inverse .navbar-nav > .open > a, 
+.dark-theme .navbar-inverse .navbar-nav > .open > a:focus, 
+.dark-theme .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.dark-theme .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.dark-theme footer{
+  background-color:black;
+  color: white !important;
+}
+
+.dark-theme footer .footer-links{
+	color:white;
+}
+
+.dark-theme footer .footer-links li a{
+  color:white;
+}
+
+.dark-theme footer .footer-infos {
+	color:white;
+}
+
+.dark-theme footer .footer-map{
+	color:white;
+}
+
+.dark-theme footer h3 {
+  color:white;
+}
+
+.dark-theme .navbar {
+  border: 0px solid transparent !important;
+  background-color: black;
+}
+
+.dark-theme .carousel-caption-custom h1 {
+  background-color: black;
+}
+
+.dark-theme .carousel-caption-custom p {
+  font-size: 1.3em;
+  margin-top: -10px;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.dark-theme .carousel-indicators .active {
+  background-color: black;
+}
+
+.dark-theme .carousel-indicators li {
+  border: 1px solid black;
+}
+
+.dark-theme .carousel-control {
+  color: black;
+}
+
+.dark-theme .carousel-control:focus, .dark-theme .carousel-control:hover {
+  color: black;
+}
+
+.dark-theme .map-svg path {
+    fill: black;
+    stroke: #fff;
+}
+
+.dark-theme .map-svg .is-active path {
+    fill: white;
+	stroke: black;
+}
+
+.dark-theme .map-list a.is-active {
+    color: black;
+    font-weight: bold;
+}
+
+.dark-theme .btn-primary {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.dark-theme .small, .dark-theme small {
+    font-size: 100%;
+}
+
+.dark-theme a {
+    color: black;
+    text-decoration: none;
+	font-weight: bold;
+}
+
+header a {
+	font-weight: normal !important;
+}
+
+.dark-theme .Tourisme .cerclePrincipal {
+    border: 0.5em solid black;
+}
+
+.dark-theme .Tourisme #cercleMiniG{
+  background-color: black;
+}
+
+.dark-theme .Tourisme #cercleMiniD{
+  background-color: black;
+}
+
+.dark-theme .Tourisme .mini_logo li {
+  background-color: black;
+}
+
+.dark-theme .Tourisme #overlay {
+  background: black;        
+}
+
+.dark-theme .Tourisme #texte_cache {
+  background-color: black;
+} 
+
+.dark-theme .Tourisme #texte_cache p {
+  color: white;
+}
+
+.dark-theme .submenu {
+background-color: black;
+}
+
+.dark-theme .submenu .item {
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+}
+.dark-theme .submenu .item:hover {
+	background-color: lightgray;
+}
+
+@media screen and (max-width: 420px) {
+	.dark-theme .map-overlay .right {
+		background-color: black !important;
+	}
+}
+
+.dark-theme .sidebar .panel-heading a {
+    color: white;
+}
+
+.dark-theme .right a {
+	color: white;
+	text-decoration: underline
+}
+
+.dark-theme .right .btn {
+	color: black !important;
+	text-decoration: none;
+}

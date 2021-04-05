@@ -1,0 +1,674 @@
+header {
+
+  /*longueur et souligne le caractère important*/
+  background-repeat: no-repeat;
+  /*ne va pas afficher plusieurs fois l'image*/
+  background-size: cover;
+  /*Va prendre toute la page*/
+
+}
+
+body {
+  background-image: url("images/image_de_fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cadre {
+  background-color: #fff9;
+  /*couleur de fond*/
+  /*espace dans le bloc*/
+  text-transform: translateY(+50%);
+
+
+}
+
+.titre {
+  border: solid 1px black;
+  /*definition de la bordure*/
+  text-align: center;
+  /*le texte sera centré au milieu*/
+  background-image: linear-gradient(to top, #c9dfff, #d8e3fc, #e4e8f9, #edeef6, #f4f4f4);
+  opacity: .6;
+  /*opacité*/
+  border-radius: 15px;
+  /*les bordures sont arrondis*/
+    text-transform: translateY(+50%);
+    margin-top: 15px;
+
+}
+
+header h2 {
+  font-family: CaviarDreams;
+  font-size: 60px;
+}
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('CaviarDreams.ttf');
+}
+
+#page {
+  background-color: #d7d7d74d;
+  border: 1px solid;
+  border-color: #d1e0e0;
+  margin-left: 14%;
+  /*espace entre le côté gauche*/
+  margin-top: 5em;
+  width: 70%;
+  padding-bottom: 3em;
+
+}
+
+#bjesuis {
+  box-shadow: 8px 8px 12px #aaa;
+  /*pour ajouter un effet d'ombre*/
+  border-radius: 15px;
+  margin-left: 16px;
+  margin-right: 40px;
+  margin-top: 10px;
+  height: 415px;
+  border: 1px solid;
+  border-color: #d1e0e0;
+  padding: 0;
+}
+
+#bjesuis p {
+  border-radius: 14px;
+  position: absolute;
+  margin: 100px 33px 0 30px;
+  border: 2px solid black;
+  padding: 17px;
+  font-size: 3em;
+  /*taille de la police*/
+  background-color: antiquewhite;
+  opacity: .2;
+}
+
+#bjesuis:hover {
+  /*lors du survol*/
+  opacity: .4;
+  -moz-transition: .7s;
+  /*effet de transition*/
+}
+
+#bjesuis:hover p {
+  opacity: 1;
+  -moz-transition: .7s;
+}
+
+#jesuis {
+  border-radius: 14px;
+  box-shadow: 8px 8px 12px #aaa;
+  width: 100%;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#bjesuis:hover {
+  opacity: .4;
+  -moz-transition: .7s;
+}
+
+#bloisirs {
+  margin-top: 1em;
+  border-radius: 14px;
+  background-color: white;
+  height: auto;
+  border: 1px solid;
+  border-color: #d1e0e0;
+  padding: 0;
+  text-align: center;
+}
+
+#bloisirs p {
+  border-radius: 14px;
+  position: absolute;
+  margin: 26% 0 0 25%;
+  border: 2px solid black;
+  padding: 8%;
+  font-size: 3em;
+  background-color: antiquewhite;
+  opacity: .2;
+
+}
+
+#bloisirs:hover {
+  opacity: .4;
+  -moz-transition: .7s;
+}
+
+#bloisirs:hover p {
+  opacity: 1;
+  -moz-transition: .7s;
+}
+
+#loisirs {
+  border-radius: 14px;
+  box-shadow: 8px 8px 12px #aaa;
+  width: 100%;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#competences {
+  border-radius: 14px;
+  box-shadow: 8px 8px 12px #aaa;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#bcompetences {
+  padding: 0;
+  margin-top: 2em;
+  border-radius: 14px;
+  background-color: white;
+  border: 1px solid;
+  border-color: #d1e0e0;
+  text-align: center;
+  width: 47%;
+  margin-left: 2%;
+}
+
+#bcompetences p {
+  border-radius: 14px;
+  position: absolute;
+  margin: 17% 0 0;
+  border: 2px solid black;
+  padding: 8%;
+  font-size: 3em;
+  background-color: antiquewhite;
+  opacity: .2;
+
+}
+
+#bcompetences:hover {
+  opacity: .4;
+  -moz-transition: .7s;
+}
+
+#bcompetences:hover p {
+  opacity: 1;
+  -moz-transition: .7s;
+}
+
+#bcompetences:hover {
+  opacity: .4;
+  -moz-transition: .7s;
+}
+
+#bexperiences {
+  padding: 0;
+  margin-top: 2em;
+  border-radius: 14px;
+  background-color: white;
+  border: 1px solid;
+  border-color: #d1e0e0;
+  text-align: center;
+  width: 46%;
+  margin-left: 2em;
+}
+
+#bexperiences p {
+  border-radius: 14px;
+  position: absolute;
+  margin: 16% 0 0 3%;
+  border: 2px solid black;
+  padding: 8%;
+  font-size: 3em;
+  background-color: antiquewhite;
+  opacity: .2;
+
+}
+
+#bexperiences:hover {
+  opacity: .4;
+  -moz-transition: .7s;
+}
+
+#bexperiences:hover p {
+  opacity: 1;
+  -moz-transition: .7s;
+}
+
+#bexperiences:hover {
+  opacity: .4;
+  -moz-transition: .7s;
+}
+
+#experiences {
+  border-radius: 14px;
+  box-shadow: 8px 8px 12px #aaa;
+  height: 274px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  width: 100%;
+}
+
+/* source => https://getbootstrap.com/docs/4.0/components/navbar/*/
+
+.navbar-default {
+  background-color: #b1edf180;
+  opacity: 0.9;
+}
+
+.navbar-brand  img {
+  width: 60px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.blocknav {
+  margin-left: 355px;
+}
+
+/***************** partie loisir ***/ 
+
+#article1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#article1 img {
+  border-radius: 15px;
+  width: 67%;
+}
+
+#hr1 {
+  margin: 80px auto;
+  width: 50%;
+  height: 2px;
+  background-color: #9a9a9a99;
+  border: none;
+}
+
+#article2 {
+  border-right: solid 1px black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#article2 p {
+  text-align: center;
+  font-size: 21px;
+}
+
+#barca {
+  padding: 3% 0 0 18%;
+}
+
+#article3 {
+  border-left: solid 1px black;
+  height: 17%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#article3 p {
+  text-align: center;
+  font-size: 21px;
+}
+
+#football {
+  max-height: 100%;
+  max-width: 85%;
+  transition: .75s;
+}
+
+#zoomimage {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#messi {
+  padding: 3% 11% 4% 0;
+  max-height: 100%;
+  max-width: 85%;
+  transition: .75s;
+  margin-right: 1em;
+}
+
+#zoomimage:hover #messi {
+  transform: scale(1.2);
+}
+
+/******Tableau*********/
+
+#article4 {
+  border-top: solid 1px black;
+
+}
+
+table {
+  border: medium solid #6495ed;
+  width: 100%;
+}
+
+caption {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+th {
+  text-align: center;
+  border: thin solid #6495ed;
+  padding: 5px;
+  background-color: #D0E3FA;
+}
+
+td {
+  border: thin solid #6495ed;
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+td:hover {
+  background-color: #7d7dff;
+  opacity: .6;
+  transition: .3s;
+}
+
+#article5 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#narcos {
+  padding: 3% 0 0 28%;
+}
+
+#article6 p {
+  text-align: center;
+  font-size: 21px;
+}
+
+#article7 p {
+  font-size: 21px;
+}
+
+#article7 audio {
+  margin-top: 1em;
+}
+
+/*************PRESENTATION**************/
+
+#article8 #titre {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#article9 {
+  width: 72%;
+  height: 60%;
+  border: solid 1px black;
+  border-radius: 14px;
+  margin-left: 13%;
+  background-color: #dafff3;
+}
+
+#article9 p {
+  text-align: center;
+}
+
+#article10 {
+  width: 72%;
+  height: 60%;
+  border: solid 1px black;
+  border-radius: 14px;
+  margin-left: 13%;
+  margin-top: 3em;
+}
+
+/*source => TIMELINE: https://www.w3schools.com/howto/howto_css_timeline.asp*/
+
+/*ligne verticale*/
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*ligne verticale*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #faa;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/*block*/
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Le petit cercle */
+.container::after {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px; 
+  z-index: 1;
+  border-radius: 50%;
+ 
+}
+
+/* block à gauche */
+.gauche {
+  right: 26%;
+}
+
+/* block à droite */
+.droite {
+  left: 26%;
+}
+
+/* petit cercle pour le block de droite */
+.droite::after {
+  left: -16px;
+}
+
+/* contenu */
+.contenu {
+  margin-bottom: 2em;
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/****FORMULAIRE***/
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_forms*/
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0082FA;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0082FA;
+  opacity: .6;
+}
+
+#formulaire {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*COMPETENCES*/
+
+#article11 #titre {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#article12 {
+  border-radius: 14px;
+  border: solid 1px black;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2em;
+}
+
+#article12 p {
+  text-align: center;
+  font-size: 24px;
+}
+
+
+
+#article12 img{
+	width: 100%;
+}
+
+#article12 #stars {
+	width: 100%;
+}
+
+#article13 {
+  border-radius: 14px;
+  border: solid 1px black;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#article13 p {
+  text-align: center;
+  font-size: 24px;
+}
+
+#c {
+  margin-bottom: 1em;
+}
+
+#troisstars {
+  margin-bottom: 1em;
+  text-transform: translateY(+50%);
+}
+
+#cpp {
+  margin-bottom: 1em;
+}
+
+#deuxetdemistars {
+  margin-bottom: 1em;
+  text-transform: translateY(+50%);  
+}
+
+#html {
+  margin-bottom: 1em;
+}
+
+#quatrestars {
+  margin-bottom: 1em;
+  text-transform: translateY(+50%);   
+}
+
+#css {
+  margin-bottom: 1em;
+}
+
+#france{
+  text-transform: translateY(+50%);   
+}
+
+#espagne{
+  text-transform: translateY(+50%);   
+}
+
+#slk{
+  text-transform: translateY(+50%);   
+}
+
+#ang{
+    text-transform: translateY(+50%);   
+}
+
+
+#article14 {
+  border-radius: 14px;
+  border: solid 1px black;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+}
+
+#article14 p {
+  text-align: center;
+  font-size: 24px;
+}
+
+#article14 img {
+  margin-bottom: 1em;
+}
+
+#article15 #titre {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#article16 {
+  border-radius: 14px;
+  border: solid 1px black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#article16 #titre {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#article16 img {
+	margin: 0 auto;
+  border-radius: 14px;
+}
+

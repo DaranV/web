@@ -1,0 +1,345 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.default-theme .navbar-desktop li {
+  color: white;
+}
+
+.default-theme .navbar-desktop li a {
+  color: white;
+}
+
+.default-theme .navbar-desktop li {
+  --color: white;
+  --hover: white;
+}
+
+.default-theme .navbar-desktop li:hover,
+.default-theme .navbar-desktop li:focus {
+  box-shadow: inset 14.5em 0 0 0 var(--hover);
+}
+
+.default-theme .navbar-desktop li:hover a, 
+.default-theme .navbar-desktop li:focus a {
+  color: #103d82;
+}
+
+.default-theme .navbar-desktop li {
+  color: var(--color);
+}
+
+.default-theme .navbar-desktop li:hover, 
+.default-theme .navbar-desktop li:focus {
+  border-color: var(--hover);
+  color: #103d82;
+}
+
+.default-theme .navbar-desktop .nav li a:hover{
+  background: none;
+}
+
+.default-theme .navbar-inverse {
+  background-color: #103d82;
+  border-color: #103d82;
+}
+
+.default-theme .navbar-inverse .navbar-toggle {
+  border-color: #103d82;
+}
+
+.default-theme.page-tourisme .navbar-inverse .navbar-toggle {
+
+    border-color: #c13a3a;
+
+}
+
+.default-theme .navbar-inverse .navbar-toggle:focus,
+.default-theme .navbar-inverse .navbar-toggle:hover {
+  background-color: #103d82;
+}
+
+.default-theme.page-tourisme .navbar-inverse .navbar-toggle:focus, 
+.default-theme.page-tourisme .navbar-inverse .navbar-toggle:hover {
+    background-color: #c13a3a;
+}
+
+.default-theme .navbar-inverse .navbar-collapse, 
+.default-theme .navbar-inverse .navbar-form {
+  border-color: #103d82;
+}
+
+.default-theme.page-tourisme .navbar-inverse .navbar-collapse, 
+.default-theme.page-tourisme .navbar-inverse .navbar-form {
+  border-color: #c13a3a;
+}
+
+.default-theme .navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.default-theme .carousel {
+  background-color: #c13a3a;
+}
+
+.default-theme  .content .chemin {
+	color: #a6a6a6;
+}
+
+.default-theme .content h1 {
+	color: #083172;
+}
+
+.default-theme .card {
+  background-color: #083172;
+  color: white;
+}
+
+.default-theme .card .heading {
+  color: white;
+}
+
+.default-theme .card p {
+  color: white;
+}
+
+.default-theme .card-default > .card-header, 
+.default-theme .card-default > .card-footer {
+  color: #333;
+  background-color: rgb(8, 47, 110);
+}
+
+.default-theme .card-default > .card-footer {
+  border-top: rgb(8, 47, 110);
+}
+
+.default-theme .sidebar .panel-heading .accordion-toggle:after {       
+  color: white;       
+}
+
+.default-theme .sidebar .panel-heading {
+  background-color:#103d82;
+  color: white;
+}
+
+.default-theme .road-work .slick-carousel .slick-item {
+  color: white;
+  background-color: orange;
+}
+
+.default-theme .road-work .slick-prev:before,
+.default-theme .road-work .slick-next:before {
+  color: black;
+  content: '';
+}
+
+.default-theme .road-work .slick-arrow {
+  border-top: 3px solid #103d82;
+  border-right: 3px solid #103d82;
+}
+
+.default-theme .map-overlay{
+  background-color: #083172;
+  color: white;
+}
+
+.default-theme .dropdown-content {
+	background-color: #f1f1f1 !important;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.default-theme .dropdown-content a {
+	color: black;
+}
+
+.default-theme .dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.default-theme .navbar-inverse .navbar-nav > .open > a, 
+.default-theme .navbar-inverse .navbar-nav > .open > a:focus, 
+.default-theme .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #c13a3a;
+}
+
+.default-theme .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.default-theme footer{
+  background-color:#103d82;
+  color: white !important;
+}
+
+.default-theme footer .footer-links{
+	color:white;
+}
+
+.default-theme footer .footer-links li a{
+  color:white;
+}
+
+.default-theme footer .footer-infos {
+	color:white;
+}
+
+.default-theme footer .footer-map{
+	color:white;
+}
+
+.default-theme footer h3 {
+  color:white;
+}
+
+.default-theme .navbar {
+  border: 0px solid transparent !important;
+  background-color: #103d82;
+}
+
+.default-theme .carousel-caption-custom h1 {
+  background-color: #103d82;
+}
+
+.default-theme .carousel-caption-custom p {
+  font-size: 1.3em;
+  margin-top: -10px;
+  background-color: #103d82;
+  padding: 10px 20px;
+}
+
+.default-theme .carousel-indicators .active {
+  background-color: #103d82;
+}
+
+.default-theme .carousel-indicators li {
+  border: 1px solid #103d82;
+}
+
+.default-theme .carousel-control {
+  color: #103d82;
+}
+
+.default-theme .carousel-control:focus, .default-theme .carousel-control:hover {
+  color: #103d82;
+}
+
+.default-theme .map-svg path {
+    fill: #103D82;
+	stroke: #fff;
+}
+
+.default-theme .map-svg .is-active path {
+    fill: #fff;
+}
+
+.default-theme .map-list a.is-active {
+    color: #d5872e;
+    font-weight: bold;
+}
+
+.default-theme .Tourisme .cerclePrincipal {
+    border: 0.5em solid #e83a3a;
+}
+
+.default-theme .Tourisme #cercleMiniG{
+  background-color: #e83a3a;
+}
+
+.default-theme .Tourisme #cercleMiniD{
+  background-color: #f66;
+}
+
+.default-theme .Tourisme .mini_logo li {
+  background-color: #f66;
+}
+
+.default-theme .Tourisme #overlay {
+  background: #e83a3a;        
+}
+
+.default-theme .Tourisme #texte_cache {
+  background-color: #f66;
+} 
+
+.default-theme .Tourisme #texte_cache p {
+  color: white;
+}
+
+.default-theme .submenu {
+background-color: #103d82;
+border-top: 1px solid white;
+}
+
+.default-theme .submenu .item {
+	text-align: center;
+}
+.default-theme .submenu .item:hover {
+	background-color: #0c2a58;
+}
+
+.default-theme .submenu .item {
+	color: white;
+	border: 1px solid white;
+}
+
+@media screen and (max-width: 420px) {
+	.map-overlay .right{
+		background-color: #103d82;
+	}
+}
+
+.default-theme.page-tourisme .navbar {
+  border: 0px solid transparent !important;
+  background-color: #e83a3a;
+}
+
+.default-theme.page-tourisme footer{
+  background-color:#e83a3a;
+  color: white !important;
+}
+
+.default-theme .custom-li {
+	background-color: #0c2e62;
+}
+
+.default-theme.page-tourisme .custom-li {
+	background-color: #c63333;
+}
+
+.default-theme.page-tourisme .navbar-desktop li:hover a, 
+.default-theme.page-tourisme .navbar-desktop li:focus a {
+    color: #e83a3a;
+}
+
+.default-theme .active {
+	box-shadow: inset 14.5em 0 0 0 var(--hover);
+}
+
+.default-theme .active a, .default-theme .active{
+	color: #103d82 !important;
+}
+
+.default-theme.page-tourisme .breadcrumb {
+    background-color: #e83a3a;
+}
+
+.default-theme .breadcrumb {
+    background-color: #103d82;
+}
+
+
+.default-theme .breadcrumb a {
+    color: white !important;
+}
+
+.default-theme .breadcrumb .active {
+    color: white !important;
+	font-weight: bold;
+}
+
+.default-theme .submenu .active{
+	background-color: #0c2a58;
+}

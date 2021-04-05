@@ -1,0 +1,75 @@
+.map {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.map-svg {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 100%;
+}
+
+
+.map-svg path {
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+.map-svg a:hover {
+    cursor: pointer;
+}
+
+.map-list {
+    column-count: 2;
+    width: 100%;
+}
+
+.map-list ul  {
+    list-style-type:circle;
+}
+
+
+.map-list  a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+    
+}
+
+@media screen and (max-width: 768px) {
+   .map-svg {
+    width: 80%;
+   }
+
+
+   .map-list {
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+ 
+   .map-list {
+     display: none;
+    }
+
+    .liste_deroulante {display:block; margin-right:auto; margin-left:auto;}
+	
+	.map-overlay .left{
+		height: 30vh !important;
+	}
+	
+	.map-overlay .right{
+		padding: 0px 30px;
+		height: 100vh;
+		padding-right: 40px;
+		overflow-y: auto;
+		padding-bottom: 160px;
+	}
+	
+	.map .col-md-6:nth-child(2) {
+		display: none !important;
+	}
+}
+

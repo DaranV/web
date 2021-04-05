@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    position:relative;
+    background:white;
+    height:100%;
+    padding:40px 30%;
+    margin:0;
+}
+
+h1 {
+    color: white;
+}
+
+.divPr{
+    width: 70%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+}

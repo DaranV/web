@@ -1,0 +1,217 @@
+<?php
+namespace App\Controller\Teacher;
+
+use Core\Controller;
+use Web\Url;
+use Usage\Arr;
+use Web\Request;
+use Usage\Validate;
+use Usage\Number;
+use Security\Password;
+
+class StudentController extends Controller{
+
+    public function __construct()
+    {
+        parent::__construct();
+		$this->view->setLayout("teacher");
+		$this->loadModel("Student");
+    }
+
+    public function index(){
+		$this->view->set(["title" => "Etudiants | Administration", "students" => $this->Student->getStudents()]);
+		$this->view->css(["teacher/css/datatables.css"]);
+		$this->view->js(["teacher/page/students.page.js?v=1"]);
+        $this->view->render(["folder" => "teacher", "file" => "students"]);
+    }
+	
+	public function view($id, $slug){
+		$this->loadModel("Bilan");
+		if($this->Student->exist($id)){
+			$student = $this->Student->getStudent($id);
+			$this->view->set(["title" => "Edition du compte de " . $student->nom . " " . $student->prenom . " | Administration", "student" => $student, "bilans" => $this->Bilan->getBilansOfStudent($id)]);
+			$this->view->css(["teacher/css/datatables.css"]);
+			$this->view->js(["teacher/page/student.page.js?v=3"]);
+			$this->view->render(["folder" => "teacher", "file" => "student"]);
+		}else{
+			$this->e404();
+		}
+	}
+	
+	public function view_bilan($studentId, $testId){
+		$this->loadModel(["Bilan", "Test"]);
+		if($this->Student->exist($studentId)){
+			if($this->Test->exist($testId)){
+				$student = $this->Student->getStudent($studentId);
+				$bilan = $this->Bilan->getDetailedBilanOfStudent($studentId, $testId);
+				if($bilan != null){
+					$this->view->set(["title" => "Détail du test effectué par " . $student->nom . " " . $student->prenom . " | Administration", "student" => $student, "bilan" => $bilan]);
+					$this->view->css(["css/question.css"]);
+					$this->view->render(["folder" => "teacher", "file" => "detail_test_student"]);
+				}else{
+					$this->e404();
+				}
+			}else{
+				$this->e404();
+			}
+		}else{
+			$this->e404();
+		}
+	}
+	
+	public function ajax_delete($id){
+		$data = [];
+		
+		if(Request::isGet()){
+			
+			$errors = "";
+			
+			if(!$this->Student->exist($id)){
+				$data["result"]["error"] = "Cet etudiant n'existe pas";
+				echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+				exit();
+			}
+			
+			if($errors != ""){
+				$data["result"]["error"] = "Merci de vérifier les champs suivant : <br>" . $errors;
+            }else{
+				$this->loadModel("Group");
+				
+				if($this->Group->studentHasGroup($id)){
+					$this->Group->removeGroupOf($id);
+				}
+				
+				$this->Student->del($id);
+				
+				$data["result"]["success"] = "L'étudiant a bien été supprimé";
+				$data["result"]["id"] = $id;
+            }
+			echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+		}else{
+			$data["result"]["error"] = "This method is not allowed for this request";
+			echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+		}
+	}
+	
+	public function ajax_edit(){
+		$data = [];
+		
+		if(Request::isPost()){
+            $tmp = array(
+                "input_nom" => Request::post("nom"),
+                "input_prenom" => Request::post("prenom"),
+                "input_email" => Request::post("email"),
+                "input_username" => Request::post("username"),
+                "input_matricule" => Request::post("matricule"),
+                "input_id" => Request::post("id"),
+			);
+			
+			$errors = "";
+			
+			if(!$this->Student->exist($tmp["input_id"])){
+				$data["result"]["error"] = "Cet etudiant n'existe pas";
+				echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+				exit();
+			}
+			
+			foreach($tmp as $input_name => $input_value){
+                if($input_value == "" && $input_name != "input_checkbox") {
+                    $errors .= str_replace("input_", "", $input_name) .", ";
+                }
+            }
+			
+			if($errors != ""){
+                $data["result"]["error"] = "Please verify these fields : <br>" . $errors;
+            }else{
+				$student = $this->Student->getStudent($tmp["input_id"]);
+				$modif = false;
+				
+                if($student->nom != $tmp["input_nom"]){
+					$modif = true;
+				}
+				
+				if($student->prenom != $tmp["input_prenom"]){
+					$modif = true;
+				}
+				
+				if($student->email != $tmp["input_email"]){
+					$modif = true;
+				}
+				
+				if($student->login_etu != $tmp["input_username"]){
+					$modif = true;
+				}
+				
+				if($student->matricule != $tmp["input_matricule"]){
+					$modif = true;
+				}
+				
+				if($modif){
+					$this->Student->update([
+						"nom" => $tmp["input_nom"],
+						"prenom" => $tmp["input_prenom"],
+						"email" => $tmp["input_email"],
+						"login_etu" => $tmp["input_username"],
+						"matricule" => $tmp["input_matricule"]
+					], $tmp["input_id"]);
+					$data["result"]["success"] = "Etudiant mis à jour avec succès";
+				}else{
+					$data["result"]["success"] = "Aucune modification apportée";
+				}
+            }
+			echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+		}else{
+			$data["result"]["error"] = "This method is not allowed for this request";
+			echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+		}
+	}
+	
+	public function ajax_edit_password(){
+		$data = [];
+		
+		if(Request::isPost()){
+            $tmp = array(
+                "input_password" => Request::post("password"),
+                "input_rpassword" => Request::post("rpassword"),
+                "input_id" => Request::post("id"),
+			);
+			
+			$errors = "";
+			
+			if(!$this->Student->exist($tmp["input_id"])){
+				$data["result"]["error"] = "Cet etudiant n'existe pas";
+				echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+				exit();
+			}
+			
+			foreach($tmp as $input_name => $input_value){
+                if($input_value == "" && $input_name != "input_checkbox") {
+                    $errors .= str_replace("input_", "", $input_name) .", ";
+                }
+            }
+			
+			if($errors != ""){
+                $data["result"]["error"] = "Please verify these fields : <br>" . $errors;
+            }else{
+				if($tmp["input_password"] != $tmp["input_rpassword"]){
+					$data["result"]["error"] = "Le mot de passe et sa confirmation ne correspondent pas";
+					echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+					exit();
+				}else if(strlen($tmp["input_password"]) < 5){
+					$data["result"]["error"] = "Le mot de passe est trop court";
+					echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+					exit();
+				}else{
+					$this->Student->update([
+						"pass_etu" => Password::make($tmp["input_password"])
+					], $tmp["input_id"]);
+					$data["result"]["success"] = "Mot de passe modifié avec succès";
+				}
+            }
+			echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+		}else{
+			$data["result"]["error"] = "This method is not allowed for this request";
+			echo json_encode(Arr::merge($data, ["version" => "1.0.0"]));
+		}
+	}
+}

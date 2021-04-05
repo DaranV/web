@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/> 
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/owfont-regular.min.css">
+  <link rel="stylesheet" type="text/css" href="css/card.css?v=1">
+  <link rel="stylesheet" type="text/css" href="css/map.css?v=5">
+  <link rel="stylesheet" type="text/css" href="css/style.css?v=290">
+  <link rel="stylesheet" type="text/css" href="css/styleTourisme.css?v=103">
+  <link rel="stylesheet" type="text/css" href="css/default-theme.css?v=240">
+  <link rel="stylesheet" type="text/css" href="css/dark-theme.css?v=105">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+</head>
+<body class="default-theme page-tourisme">
+  <header>
+  <div class="banner-2"></div>
+    <nav class="navbar navbar-inverse navbar-mobile hidden-lg hidden-md">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-nav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-nav">
+          <ul class="nav navbar-nav">
+              <li><a href="/">Accueil</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eau et assainissement
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Emploi et économie</a></li>
+              <li><a href="#">Aménagement du territoire</a></li>
+              <li class="custom-li"><a href="tourisme.html">Tourisme</a></li>
+              <li><a href="#">Environnement</a></li>
+              <li><a href="#">L'intercomunnalité</a></li>	
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    <nav class="navbar navbar-mobile navbar-desktop hidden-xs hidden-sm">
+      <ul class="nav">
+        <li class="nav-icon"><a href="/"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+        <div>
+          <li class="dropdown">
+            <a href="#">Eau et assainissement</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li> 
+          <li><a href="#">Emploi et économie</a></li>
+          <li><a href="#">Aménagement du territoire</a></li>
+          <li class="custom-li active"><a href="tourisme.html">Tourisme</a></li>
+          <li><a href="#">Environnement</a></li>
+          <li><a href="#">L'intercomunnalité</a></li>	
+        </div>
+        <li class="nav-icon"><a><i class="fa fa-wheelchair fa-2x switch-theme" aria-hidden="true"></i></a></li>  
+      </ul>
+    </nav> 
+  </header> 
+  <div>
+	<ul class="breadcrumb">
+	<li><a href="/index.html">Accueil</a></li>
+<li class="active">Tourisme</li>
+</ul>
+	</div>
+	<section class="content">
+		<div class="container Tourisme">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="centrage">
+						<div class='cerclePrincipal'>
+							<div id="overlay">
+								<div id='info'>
+									<p id ='title'></p>
+									<p id ='subtitle'></p>  			
+								</div>
+							</div>
+							<div id='cercleMiniG' onmouseover="functionOver2('Vers la page Patrimoine')" onmouseleave="functionLeave2()"><a href="https://www.bayeux-intercom.fr/tourisme/patrimoine-historique/"><img src="images/parthenon.svg"></a></div>
+							<div id='cercleMiniD' onmouseover="functionOver2('Vers la page Taxe de séjour')" onmouseleave="functionLeave2()"><a href="/taxes.html"><img src="images/coin.svg"></a></div>   
+						</div>
+						<ul class="mini_logo">
+							<li id ='dt' onclick="maFonction1()" onmouseover="functionOver('Développement touristique')" onmouseleave="functionLeave()"><img src="images/phone.svg"></li>  <!-- Contacter le service Développement Touristique -->
+							<li id ='ti' onclick="maFonction2()" onmouseover="functionOver('Office de tourisme')" onmouseleave="functionLeave()"><img src="images/phone.svg"></li> <!-- Contacter l'Office de Tourisme Intercommunal -->
+							<li id ='qu' onclick="maFonction3()" onmouseover="functionOver('Nous contacter')" onmouseleave="functionLeave()"><img src="images/file.svg"></li>  <!-- Nous poser une question --> 
+							<li id ='site' onclick="maFonction4()" onmouseover="functionOver('Site')" onmouseleave="functionLeave()"><img src="images/file.svg"></li>  <!-- Site de l'office du tourisme -->
+						</ul>
+
+						<div id="texte_cache">
+							<p id="leTexte"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<h4 class="">
+				Le Service de Développement Touristique
+			</h4>
+			<p>Bayeux Intercom intervient dans le domaine du tourisme depuis 1998.</p><p>&nbsp;</p><p>Le service Développement Touristique de Bayeux Intercom gère en direct le plan pluriannuel d’aménagement touristique, ainsi que la collecte de la taxe de séjour.</p><p>&nbsp;</p><ul><li class="text-justify"><p class="text-left">Le Plan pluriannuel d’aménagement touristique prévoit la réalisation de projets structurants :<a href="http://www.bayeux-intercom.fr/tourisme/chemins-de-randonnee/" target="_blank">&nbsp;itinéraires de randonnée à pied</a>,&nbsp;<a href="http://www.bessin-normandie.com/tourisme/loisirs/randonnees/a-cheval" target="_blank">à cheval</a>&nbsp;et&nbsp;<a href="http://www.bessin-normandie.com/tourisme/loisirs/randonnees/a-velo" target="_blank">à vélo</a>,&nbsp;<a href="http://www.bayeux-intercom.fr/tourisme/patrimoine-historique/" target="_blank">valorisation du patrimoine villageois</a>, amélioration de l’accueil des visiteurs à la Batterie de Longues-sur-Mer ou des plaisanciers en escale à Port-en-Bessin-Huppain …</p></li></ul><ul><li class="text-justify"><p class="text-left">La taxe de séjour est collectée par les hébergeurs et permet de faire financer par les touristes la politique de développement touristique du territoire.</p></li></ul>
+					<br><br><h4 class="">
+				L'Office de Tourisme Intercommunal
+			</h4><p><a href="http://bayeux-bessin-tourisme.com/" target="_blank">OTI de Bayeux Intercom</a></p><p>&nbsp;</p><p>Bayeux Intercom délègue par ailleurs à l’office de tourisme de Bayeux Intercom (association 1901) :</p><p>&nbsp;</p><p>- les missions d’accueil et d’information (offices de tourisme à Bayeux, Longues-sur-Mer, Port-en-Bessin-Huppain et Arromanches (à compter du 1er janvier 2017),</p><p>&nbsp;</p><p>- la promotion de la destination ainsi que l’animation à destination des touristes (DDay Festival Normandy, Rendez-vous à la Cathédrale, Feux d’artifice de la tour Vauban, Soirs d'Eté à l'Abbaye et la Cathédrale de Guillaume), ainsi que les visites guidées de la cathédrale, du Vieux Bayeux et de la Batterie de Longues-sur-mer.</p>
+				<br><br></div><br><br><br><br>
+			</div>
+		</div>
+	</section>
+	
+   <footer>
+    <div class="row footer-top hidden-sm hidden-xs">
+      <div class="col-md-3 footer-links" style="border-right: solid 1px;">
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="https://bayeux-intercom.fr/infos/plan-du-site"> Plan du site</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/mentions-legales/"> Mention Légales</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/horaires-et-plans-dacces/"> Horaires & Plan daccès</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/contact/"> Contact</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/accessibilite/"> Accessibilité</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 footer-infos" style="border-right: solid 1px;">
+        <h3>Renseignements</h3>
+        <p>4 place Gauquelin Despallières 14400 BAYEUX</p>
+        <p><strong>02 31 51 63 00</strong></p>
+        <p>Du Lundi au Vendredi
+        <br/>8h30-12h00<br/>14h00-17h30</p>
+      </div>
+      <div class="col-md-3 footer-map">
+        <div>
+          <img src="https://bayeux-intercom.fr/fileadmin/templates/images/logo-blanc.png" alt="Logo Bayeux Intercom" />
+        </div>
+      </div>
+    </div>
+    <div class="row hidden-md hidden-lg">
+      <div class="col-sm-12 col-xs-12 footer-links">
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="https://bayeux-intercom.fr/infos/plan-du-site"> Plan du site</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/mentions-legales/"> Mention Légales</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/horaires-et-plans-dacces/"> Horaires & Plan daccès</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/contact/"> Contact</a></li>
+          <li><a href="https://bayeux-intercom.fr/infos/accessibilite/"> Accessibilité</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-xs-12 footer-infos">
+        <h3>Renseignements</h3>
+        <p>4 place Gauquelin Despallières 14400 BAYEUX</p>
+        <p><strong>02 31 51 63 00</strong></p>
+        <p>Du Lundi au Vendredi
+        <br/>8h30-12h00<br/>14h00-17h30</p>
+      </div>
+      <div class="col-sm-12 col-xs-12 footer-map">
+        <h3>Carte</h3>
+        <div style="padding-left: 10px; padding-right: 25px;">
+          <img src="https://bayeux-intercom.fr/fileadmin/templates/images/logo-blanc.png" alt="Logo Bayeux Intercom"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a href="https://www.google.com/maps/place/Bayeux+Intercom/@49.280067,-0.707003,16z/data=!4m5!3m4!1s0x0:0x81033eeef083791e!8m2!3d49.280067!4d-0.707003?hl=fr-FR" target="_blank">
+          <img src="https://bayeux-intercom.fr/fileadmin/templates/images/googlemap-bayeux.JPG" alt="Plan d'accès aux bâtiment de Bayeux Intercom" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+  <script type="text/javascript" src="js/main.js?v=1"></script>
+  
+  <script type="text/javascript">
+
+    var overlay = document.getElementById('overlay');
+    var title = document.getElementById('title');
+    var info = document.getElementById('info');
+    var texte_cache = document.getElementById('texte_cache');
+    var leTexte = document.getElementById('leTexte');
+    var cD = document.getElementById('cercleMiniG');
+    var cG = document.getElementById('cercleMiniD');
+
+    function maFonction(){
+        overlay.style.visibility="visible";
+    };
+
+    function functionOver(texte){
+        texte_cache.style.visibility="visible";
+        leTexte.innerHTML = texte;
+
+    }
+
+    function functionLeave(){
+        texte_cache.style.visibility="hidden";
+    }
+
+    function functionLeave2(){
+        overlay.style.visibility="hidden";
+    }    
+
+    function functionOver2(texte){
+    	maFonction();
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");
+
+      setTimeout(() => {
+      info.classList.remove("animated");
+      info.classList.remove("zoomIn");
+      info.classList.remove("faster");
+
+      overlay.classList.remove("animated");
+      overlay.classList.remove("zoomIn");
+      overlay.classList.remove("faster");
+      }, 870);     
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");   
+
+    	title.innerHTML = texte;
+      subtitle.innerHTML = "";      
+    }
+
+    function maFonction1(){
+    	maFonction();
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");
+
+      setTimeout(() => {
+      info.classList.remove("animated");
+      info.classList.remove("zoomIn");
+      info.classList.remove("faster");
+
+      overlay.classList.remove("animated");
+      overlay.classList.remove("zoomIn");
+      overlay.classList.remove("faster");
+      }, 870);     
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");   
+
+    	title.innerHTML = "Contacter le service Développement Touristique";
+    	subtitle.innerHTML = "Ligne directe : 02 31 51 65 30";
+    }
+
+    function maFonction2(){
+    	maFonction();
+      info.classList.add("animated");
+    	info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");
+
+      setTimeout(() => {
+      info.classList.remove("animated");
+      info.classList.remove("zoomIn");
+      info.classList.remove("faster");
+
+      overlay.classList.remove("animated");
+      overlay.classList.remove("zoomIn");
+      overlay.classList.remove("faster");
+      }, 450);  
+
+    	title.innerHTML = "Contacter l'Office de Tourisme Intercommunal";
+    	subtitle.innerHTML = "Bureau de Bayeux : 02 31 51 28 28 <br>Bureau de Port en Bessin-Huppain : 02 31 22 45 80 <br>Bureau de Longues sur Mer : 02 31 21 46 87 <br> Mail : info@bayeux-tourism.com";
+    	subtitle.style.fontSize="100%";
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");      
+    }
+
+    function maFonction3(){
+    	maFonction();
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");
+
+      setTimeout(() => {
+      info.classList.remove("animated");
+      info.classList.remove("zoomIn");
+      info.classList.remove("faster");
+
+      overlay.classList.remove("animated");
+      overlay.classList.remove("zoomIn");
+      overlay.classList.remove("faster");
+      }, 870);  
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");
+
+    	title.innerHTML = "Nous poser une question";
+    	subtitle.innerHTML = "Accéder au formulaire de demande";
+    }  
+
+    function maFonction4(){
+    	maFonction();
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");
+
+      setTimeout(() => {
+      info.classList.remove("animated");
+      info.classList.remove("zoomIn");
+      info.classList.remove("faster");
+
+      overlay.classList.remove("animated");
+      overlay.classList.remove("zoomIn");
+      overlay.classList.remove("faster");
+      }, 870);  
+
+      info.classList.add("animated");
+      info.classList.add("zoomIn");
+      info.classList.add("faster");
+
+      overlay.classList.add("animated");
+      overlay.classList.add("zoomIn");
+      overlay.classList.add("faster");   
+
+    	title.innerHTML = "Site de l'office du tourisme";
+    	subtitle.innerHTML = "www.bayeux-bessin-tourisme.com";
+    }        
+
+  </script>
+  
+</body>
+</html>

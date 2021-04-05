@@ -1,0 +1,87 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e83a3a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+li.Slide {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+a{
+  height: 36px;
+  padding-top: 3%;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+}
+
+.Slide {
+  --color: white;
+  --hover: white;
+}
+
+.Slide:hover,
+.Slide:focus {
+  box-shadow: inset 14.5em 0 0 0 var(--hover);
+}
+
+.Slide:hover a, .Slide:focus a {
+  text-decoration: none;
+  color: #e83a3a;
+}
+
+.Slide a:focus {
+  text-decoration: none;
+}
+
+.Slide {
+  color: var(--color);
+  transition: 0.4s;
+}
+.Slide:hover, .Slide:focus {
+  border-color: var(--hover);
+  color: #e83a3a;
+}
+
+.plus i:hover{
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav li a:hover{
+  background: none;
+}
+
+
+
+
+
+
+

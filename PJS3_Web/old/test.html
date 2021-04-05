@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Test</title>
+    <style>
+        .rt {
+            -webkit-animation: fa-spin 1s infinite linear;
+            animation: fa-spin 1s infinite linear;
+
+        }
+    </style>
+</head>
+<body>
+
+	<ul>
+  <li><a class="Slide" >Home</a></li>
+  <li><a class="Slide" href="#news">Vie scolaire</a></li>
+  <li><a class="Slide" href="#contact">Onglet 1</a></li>
+  <li><a class="Slide" href="#about">Onglet</a></li>
+    </ul>
+
+        <i class="fa fa-plus"></i>
+
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+    	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+
+    <script>
+        $("i").on("click", function(e) {
+            e.preventDefault();
+            $(this).addClass("rt");
+            setTimeout(() => {
+                $(this).removeClass("rt");
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>

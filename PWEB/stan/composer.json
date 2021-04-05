@@ -1,0 +1,28 @@
+{
+    "name": "qcm_live/app",
+    "type": "project",
+    "description": "qcm_live",
+    "require": {
+        "visualappeal/php-auto-update": "^0.9.2",
+        "gregwar/captcha": "^1.1",
+        "ghunti/highcharts-php": "^3.0",
+        "doctrine/inflector": "^1.1",
+        "symfony/console": "3.4.x-dev",
+        "filp/whoops": "^2.0@dev",
+        "symfony/var-dumper": "3.4.x-dev",
+        "sebastian/comparator": "1.2.x-dev",
+        "phpgangsta/googleauthenticator": "dev-master",
+        "mongodb/mongodb": "^1.4",
+        "sokil/php-mongo": "^1.23",
+        "alcaeus/mongo-php-adapter": "^1.1",
+        "wixel/gump": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : "system/",
+            "App\\" : "app/",
+            "Shell\\" : "shell/"
+        }
+    },
+    "minimum-stability": "dev"
+}
